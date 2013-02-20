@@ -1,11 +1,172 @@
+
+
 <html>
 <head>
+<meta charset="utf-8">
 <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/d3.v2.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet">
 
+<style type="text/css">
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+    
+    body {
+      background-image: url('img/bckGround.png');
+      background-position: center;
+    }
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel h1,
+    .carousel-caption .lead,
+    span {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 100%;
+        padding: 20px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+      
+      .carousel.customized {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      
+      .carousel-inner.customized {
+        width: 1024px;
+        height: 768px;
+        
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -512px;
+        margin-top: -384px;
+      }
+      
+      
+
+</style>
+
+<style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
 <title>Visualize with d3js</title>
 </head>
 <body>
+
+  <div id="myCarousel" class="carousel slide customized">
+<!--   <img src="img/slide-01.jpg" alt=""> -->
+    <div class="carousel-inner customized">
+      <div class="item active">
+        <span style="font-size: 52px; font-weight: bold;">Visualize with d3js</span>
+        <h1 style="font-size: 32px; font-weight:normal;">Bring life to your data</h1>
+        <div style="width:100%; height:450px; vertical-align:bottom; text-align:right"></div>
+        <h1 style="font-size: 40px; text-align: right"><a style="font-size: 45px;" href="http://twitter.com/hsilomedus">@hsilomedus</a><br/>with d3js, Bootstrap &amp; jQuery.</h1>
+      </div>
+    
+    
+      <div class="item">
+        
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Example headline.</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Sign up today</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+<!--         <img src="img/slide-02.jpg" alt=""> -->
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+<!--         <img src="img/slide-03.jpg" alt=""> -->
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>One more for good measure.</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Browse gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+  </div><!-- /.carousel -->
+
+  <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel();
+          $('#myCarousel').carousel('pause');
+        })
+      }(window.jQuery)
+    </script>
+    <script src="js/holder.js"></script>
+
 </body>
 </html>
