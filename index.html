@@ -16,10 +16,28 @@
       background-image: url('img/bckGround.png');
       background-position: center;
     }
+    
+    h2, h3, h4, h5, h6, span, div, p {
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    
+    h1 {
+      line-height: 1.25;
+    }
+    
+    h1, .greenish {
+      color: #00cc88;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    
+    .blueish {
+      color: #0088cc;
+    }
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 60px;
+/*       margin-bottom: 60px; */
     }
 
     .carousel .container {
@@ -38,8 +56,11 @@
     }
 
     .carousel .item {
-      height: 500px;
+        height: 100%;
+        padding: 10px 45px;
+        width: 934px;
     }
+    
     .carousel img {
       position: absolute;
       top: 0;
@@ -48,42 +69,27 @@
       height: 500px;
     }
 
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 200px;
-    }
-    .carousel h1,
-    .carousel-caption .lead,
-    span {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-    
-    .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 100%;
-        padding: 20px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
+/*     .carousel-caption { */
+/*       background-color: transparent; */
+/*       position: static; */
+/*       max-width: 550px; */
+/*       padding: 0 20px; */
+/*       margin-top: 200px; */
+/*     } */
+/*     .carousel h1, */
+/*     .carousel-caption .lead, */
+/*     span { */
+/*       margin: 0; */
+/*       line-height: 1.25; */
+/*     } */
+/*     .carousel-caption .btn { */
+/*       margin-top: 10px; */
+/*     } */
+     
+/*       .carousel img { */
+/*         width: auto; */
+/*         height: 500px; */
+/*       } */
       
       .carousel.customized {
         width: 100%;
@@ -102,6 +108,55 @@
         margin-top: -384px;
       }
       
+      .bold72 {
+        font-size: 72px; 
+        font-weight: bold;
+      }
+      
+      .normal52 {
+        font-size: 52px; 
+        font-weight:normal;
+      }
+      
+      .bold62 {
+        font-size: 62px; 
+        font-weight: bold;
+      }
+      
+      .normal42 {
+        font-size: 42px; 
+        font-weight:normal;
+      }
+      
+      .bold52 {
+        font-size: 52px; 
+        font-weight: bold;
+      }
+      
+       .bold32 {
+        font-size: 32px; 
+        font-weight: bold;
+      }
+      
+      .normal32 {
+        font-size: 32px; 
+        font-weight:normal;
+      }
+      
+      .normal24 {
+        font-size: 24px; 
+        font-weight:normal;
+      }
+      
+      .bold40 {
+        font-size: 40px; 
+        font-weight: bold;
+      }
+      
+      .bold45 {
+        font-size: 45px;
+        font-weight: bold;
+      }
       
 
 </style>
@@ -112,49 +167,190 @@
 <body>
 
   <div id="myCarousel" class="carousel slide customized">
-<!--   <img src="img/slide-01.jpg" alt=""> -->
     <div class="carousel-inner customized">
-      <div class="item active">
-        <span style="font-size: 52px; font-weight: bold;">Visualize with d3js</span>
-        <h1 style="font-size: 32px; font-weight:normal;">Bring life to your data</h1>
-        <div style="width:100%; height:450px; vertical-align:bottom; text-align:right"></div>
-        <h1 style="font-size: 40px; text-align: right"><a style="font-size: 45px;" href="http://twitter.com/hsilomedus">@hsilomedus</a><br/>with d3js, Bootstrap &amp; jQuery.</h1>
+    
+      <div id="slide1" class="item active">
+        <h1 class="bold72">Visualize with d3js</h1>
+        <span class="normal52">Bring life to your data</span>
+        <div style="width:100%; height:450px;"></div>
+        <div class="bold40" style="width:100%; text-align: right"><a class="bold45" href="http://twitter.com/hsilomedus">@hsilomedus</a><br/>
+          with <a href="http://d3js.org/">d3js</a>, <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a> &amp; 
+          <a href="http://jquery.com/">jQuery.</a></div>
       </div>
     
-    
-      <div class="item">
+      <div id="slide2" class="item">
+        <h1 class="bold72">d3js ID card</h1>
+        <div style="width:100%; height:80px;"></div>
+        <p class="normal42">JavaScript library for manipulating documents based on data.</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - single / multiple selections; properties, values and DOM editing</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - integrated utilities</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - data driven DOM manipulations</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - gallery of layouts</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32 blueish"> - you define the rendering: HTML, Canvas or SVG.</p>
+      </div> 
+      
+      <div id="slide3" class="item">
+        <h1 class="bold72">Manipulate!</h1>
         
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Example headline.</h1>
-            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Sign up today</a>
+        <div style="width:100%; height:10px;"></div>
+        
+          <div style="width:60%;display:inline-block;float:left">
+            <span class="normal32 singleLabel">Original text</span>
+            <br/>
+            <br/>
+            <code>&lt;span class="normal32 singleLabel">Original text&lt;/span&gt;</code>
+            </div>
+          <div style="width:40%;display:inline-block;float:left">
+            <pre class="pre-scrollable">d3.select('#slide3 .singleLabel')<br/> .text('Altered text')<br/> .classed('blueish', true);</pre>
+            <div style="width:100%; text-align:right;"><a class="btn btn-primary"
+              onclick="d3.select('#slide3 .singleLabel').text('Altered text').classed('blueish', true);"
+            >Execute</a></div></div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:60%;display:inline-block;float:left">
+            <a class="btn" id="singleButton">Dumb button</a>
+            <br/>
+            <br/>
+            <code>&lt;a class="btn" id="singleButton"&gt;Dumb button&lt;/a&gt;</code>
           </div>
+          <div style="width:40%;display:inline-block;float:left">
+            <pre class="pre-scrollable">
+d3.select('#slide3 #singleButton')
+ .text('POWER button!')
+ .classed('btn-primary', true)
+ .style('font-weight', 'bold')
+ .on('click', function() {
+  d3.select(this)
+   .text('Dumb button')
+   .classed('blueish', false)
+   .style('font-weight:normal');
+ });</pre>
+            <div style="width:100%; text-align:right;"><a class="btn btn-primary"
+              onclick="
+                d3.select('#slide3 #singleButton')
+                .text('POWER button!')
+                .classed('btn-primary', true)
+                .style('font-weight', 'bold')
+                .on('click', function() {
+                 d3.select(this)
+                  .text('Dumb button')
+                  .classed('btn-primary', false)
+                  .style('font-weight','normal');
+                });
+              "
+            >Execute</a></div></div>
+
+        <div class="clearfix"></div>
+        <div style="width:100%; height:30px;"></div>
+        
+        <div style="width:60%;display:inline-block;float:left">
+          <a class="btn multipleButtons" dataToggle="btn-success">Success</a>
+          <a class="btn multipleButtons" dataToggle="btn-warning">Warning</a>
+          <a class="btn multipleButtons" dataToggle="btn-danger">Danger</a>
+          <br/>
+          <br/>
+          <code>&lt;a class="btn multipleButtons" dataToggle="btn-success"&gt;Success&lt;/a&gt;</code><br/><br/>
+          <code>&lt;a class="btn multipleButtons" dataToggle="btn-warning"&gt;Warning&lt;/a&gt;</code><br/><br/>
+          <code>&lt;a class="btn multipleButtons" dataToggle="btn-danger"&gt;Danger&lt;/a&gt;</code>
         </div>
+          <div style="width:40%;display:inline-block;float:left">
+            <pre class="pre-scrollable">
+d3.selectAll('#slide3 .multipleButtons')
+ .style('font-weight','bold')
+ .each(function (d,i) {
+   d3.select(this).classed(
+    d3.select(this).attr('dataToggle'), true);
+ });</pre>
+            <div style="width:100%; text-align:right;"><a class="btn btn-primary"
+              onclick="
+                d3.selectAll('#slide3 .multipleButtons')
+                .style('font-weight','bold')
+                .each(function (d,i) {
+                  d3.select(this).classed(d3.select(this).attr('dataToggle'), true);
+                });
+              "
+            >Execute</a></div></div>
+
       </div>
-      <div class="item">
-<!--         <img src="img/slide-02.jpg" alt=""> -->
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Learn more</a>
+      
+      
+      <div id="slide4" class="item">
+        <h1 class="bold72">Creating stuff</h1>
+        
+        <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:50%;display:inline-block;float:left" class="emptyDiv">
+            <span class="normal24">This is an empty div with class &apos;emptyDiv&apos;</span>
+            <br/><br/>
           </div>
-        </div>
+          <div style="width:40%;display:inline-block;float:left;padding-left:10px" class="codeDiv">
+            <pre>
+var theEmptyDiv = 
+ d3.select('#slide4 .emptyDiv')
+  .append('div');
+theEmptyDiv
+  .append('span')
+  .classed('normal32', true)
+  .classed('blueish', true)
+  .text('Not anymore!');
+theEmptyDiv.append('br');
+theEmptyDiv
+  .append('span')
+  .classed('normal32', true)
+  .classed('greenish', true)
+  .text('the code used for this is:')
+theEmptyDiv.append('br');
+theEmptyDiv
+  .append('div')  
+  .html(d3.select('#slide4 .codeDiv').html())
+  .select('pre')
+   .style('color', '#cc8800');
+theEmptyDiv.select('.btn').remove()
+            </pre>
+            <div style="width:100%; text-align:right;"><a class="btn btn-primary"
+              onclick="
+                var theEmptyDiv = 
+                  d3.select('#slide4 .emptyDiv')
+                   .append('div');
+                 theEmptyDiv
+                   .append('span')
+                   .classed('normal32', true)
+                   .classed('blueish', true)
+                   .text('Not anymore!');
+                 theEmptyDiv.append('br');
+                 theEmptyDiv
+                   .append('span')
+                   .classed('normal32', true)
+                   .classed('greenish', true)
+                   .text('the code used for this is:')
+                 theEmptyDiv.append('br');
+                 theEmptyDiv
+                   .append('div')  
+                   .html(d3.select('#slide4 .codeDiv').html())
+                   .select('pre')
+                     .style('color', '#cc8800');
+                 theEmptyDiv.select('.btn').remove()"
+            >Execute</a></div></div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
       </div>
-      <div class="item">
-<!--         <img src="img/slide-03.jpg" alt=""> -->
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>One more for good measure.</h1>
-            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <a class="btn btn-large btn-primary" href="http://twitter.github.com/bootstrap/examples/carousel.html#">Browse gallery</a>
-          </div>
-        </div>
-      </div>
+      
+      
     </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    
+    
+    
+    
+    <a class="left carousel-control" href="#myCarousel" onclick="goBack();">‹</a>
+    <a class="right carousel-control" href="#myCarousel" onclick="goNext();">›</a>
   </div><!-- /.carousel -->
 
   <script>
@@ -163,10 +359,36 @@
           // carousel demo
           $('#myCarousel').carousel();
           $('#myCarousel').carousel('pause');
+          $('#myCarousel').bind('slid', function() {
+            $('#myCarousel').carousel('pause');
+          });
+          
+          $(window).keydown(function(event){
+            if (event) {
+              if (event.keyCode == 39) {
+                //right
+                goNext();
+              } else if (event.keyCode == 37) {
+                //left
+                goBack();
+              }
+              
+            }
+          });
         })
       }(window.jQuery)
+      
+      
+      function goNext() {
+        $('#myCarousel').carousel('next');
+      }
+      
+      function goBack() {
+        $('#myCarousel').carousel('prev');
+      }
+      
     </script>
-    <script src="js/holder.js"></script>
+<!--     <script src="js/holder.js"></script> -->
 
 </body>
 </html>
