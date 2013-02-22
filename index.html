@@ -6,6 +6,8 @@
 <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/d3.v2.js"></script>
+<script type="text/javascript" src="js/flare.js"></script>
+<script type="text/javascript" src="js/miserables.js"></script>
 <link href="css/bootstrap.css" rel="stylesheet">
 
 <style type="text/css">
@@ -68,28 +70,6 @@
       min-width: 100%;
       height: 500px;
     }
-
-/*     .carousel-caption { */
-/*       background-color: transparent; */
-/*       position: static; */
-/*       max-width: 550px; */
-/*       padding: 0 20px; */
-/*       margin-top: 200px; */
-/*     } */
-/*     .carousel h1, */
-/*     .carousel-caption .lead, */
-/*     span { */
-/*       margin: 0; */
-/*       line-height: 1.25; */
-/*     } */
-/*     .carousel-caption .btn { */
-/*       margin-top: 10px; */
-/*     } */
-     
-/*       .carousel img { */
-/*         width: auto; */
-/*         height: 500px; */
-/*       } */
       
       .carousel.customized {
         width: 100%;
@@ -128,6 +108,11 @@
         font-weight:normal;
       }
       
+      .normal35 {
+        font-size: 35px; 
+        font-weight:normal;
+      }
+      
       .bold52 {
         font-size: 52px; 
         font-weight: bold;
@@ -158,11 +143,135 @@
         font-weight: bold;
       }
       
+      #slide7 .bar {
+        display: inline-block;
+        border: 1px solid gray;
+      }
+      
+      #slide7 .barDesc {
+        display: inline-block;
+        width: 80px;
+      }
+      
+      #slide8 .axis text {
+        font: 10px sans-serif;
+        fill: white;
+      }
+      
+      #slide8 .axis path,
+      #slide8 .axis line {
+        fill: none;
+        stroke: #fff;
+        shape-rendering: crispEdges;
+      }
+      
+      #slide8 .bar {
+        fill: steelblue;
+        fill-opacity: .9;
+      }
+      
+      #slide8 .x.axis path {
+        display: none;
+      }
+      
+      #slide8 label {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      
+      
+      #slide9 .node circle {
+        cursor: pointer;
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+      }
+      
+      #slide9 .node text {
+        font-size: 11px;
+        fill: #00cc88;
+      }
+      
+      #slide9 path.link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+      }
+      
+      #slide10 .node {
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+      
+      #slide10 .link {
+        stroke: #999;
+        stroke-opacity: .6;
+      }
+      
+      .Purples .q0-3{fill:rgb(239,237,245)}
+      .Purples .q1-3{fill:rgb(188,189,220)}
+      .Purples .q2-3{fill:rgb(117,107,177)}
+      .Purples .q0-4{fill:rgb(242,240,247)}
+      .Purples .q1-4{fill:rgb(203,201,226)}
+      .Purples .q2-4{fill:rgb(158,154,200)}
+      .Purples .q3-4{fill:rgb(106,81,163)}
+      .Purples .q0-5{fill:rgb(242,240,247)}
+      .Purples .q1-5{fill:rgb(203,201,226)}
+      .Purples .q2-5{fill:rgb(158,154,200)}
+      .Purples .q3-5{fill:rgb(117,107,177)}
+      .Purples .q4-5{fill:rgb(84,39,143)}
+      .Purples .q0-6{fill:rgb(242,240,247)}
+      .Purples .q1-6{fill:rgb(218,218,235)}
+      .Purples .q2-6{fill:rgb(188,189,220)}
+      .Purples .q3-6{fill:rgb(158,154,200)}
+      .Purples .q4-6{fill:rgb(117,107,177)}
+      .Purples .q5-6{fill:rgb(84,39,143)}
+      .Purples .q0-7{fill:rgb(242,240,247)}
+      .Purples .q1-7{fill:rgb(218,218,235)}
+      .Purples .q2-7{fill:rgb(188,189,220)}
+      .Purples .q3-7{fill:rgb(158,154,200)}
+      .Purples .q4-7{fill:rgb(128,125,186)}
+      .Purples .q5-7{fill:rgb(106,81,163)}
+      .Purples .q6-7{fill:rgb(74,20,134)}
+      .Purples .q0-8{fill:rgb(252,251,253)}
+      .Purples .q1-8{fill:rgb(239,237,245)}
+      .Purples .q2-8{fill:rgb(218,218,235)}
+      .Purples .q3-8{fill:rgb(188,189,220)}
+      .Purples .q4-8{fill:rgb(158,154,200)}
+      .Purples .q5-8{fill:rgb(128,125,186)}
+      .Purples .q6-8{fill:rgb(106,81,163)}
+      .Purples .q7-8{fill:rgb(74,20,134)}
+      .Purples .q0-9{fill:rgb(252,251,253)}
+      .Purples .q1-9{fill:rgb(239,237,245)}
+      .Purples .q2-9{fill:rgb(218,218,235)}
+      .Purples .q3-9{fill:rgb(188,189,220)}
+      .Purples .q4-9{fill:rgb(158,154,200)}
+      .Purples .q5-9{fill:rgb(128,125,186)}
+      .Purples .q6-9{fill:rgb(106,81,163)}
+      .Purples .q7-9{fill:rgb(84,39,143)}
+      .Purples .q8-9{fill:rgb(63,0,125)}
+        #slide11 circle {
+            stroke: #EFEDF5;
+            fill: #EFEDF5;
+        }
+        #slide11 line {
+            stroke: #EFEDF5;
+            pointer-events: none
+        }
+        #slide11 path {
+            stroke: black
+        }
+      
 
 </style>
 
 <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
 <title>Visualize with d3js</title>
+
+
+
+
 </head>
 <body>
 
@@ -279,8 +388,7 @@ d3.selectAll('#slide3 .multipleButtons')
             >Execute</a></div></div>
 
       </div>
-      
-      
+            
       <div id="slide4" class="item">
         <h1 class="bold72">Creating stuff</h1>
         
@@ -343,6 +451,1304 @@ theEmptyDiv.select('.btn').remove()
           <div style="width:100%; height:30px;"></div>
       </div>
       
+      <div id="slide5" class="item">
+        <h1 class="bold72">Populating data</h1>
+        
+        <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:50%;display:inline-block;float:left" class="emptyDiv">
+            &nbsp;
+          </div>
+          <div style="width:50%;display:inline-block;float:left;" class="codeDiv">
+          <script type="text/javascript">
+            var speakers = [
+                            {firstName: 'Mite',
+                              lastName: 'Mitreski'},
+                            {firstName: 'Branislav',
+                              lastName: 'Bajlovski'},
+                            {firstName: 'Igor',
+                              lastName: 'Stojanovski'},
+                            {firstName: 'Pance',
+                              lastName: 'Cavkovski'},
+                            {firstName: 'Dragan',
+                              lastName: 'Sahpaski'},
+                            {firstName: 'Goran',
+                              lastName: 'Peoski'},
+                            {firstName: 'Nikolche',
+                              lastName: 'Mihajlovski'},
+                            {firstName: 'Ice',
+                              lastName: 'Penov'},
+                            {firstName: 'Risto',
+                              lastName: 'Muchev'}];
+            
+            function updateAttendees() {
+              
+              var theEmptyDiv = 
+               d3.select('#slide5 .emptyDiv');
+
+              var selector = 
+                theEmptyDiv.selectAll('.speakerData')
+                .data(speakers);
+              
+              selector
+                .select('.first-name-span')
+                .text(function(d,i) {return ', ' + d.firstName;});
+              
+              selector
+                 .select('.last-name-span')
+                 .text(function(d,i) {return d.lastName;});
+              
+              var renderDiv = 
+                selector.enter().append('div');
+              
+              renderDiv
+                .classed('speakerData', true)
+                .classed('normal24', true)
+              
+              renderDiv
+                .append('i')
+                  .classed('icon-user', true)
+                  .classed('icon-white', true)
+                  .style('vertical-align','middle');
+              
+              renderDiv
+              .append('span')
+                .classed('last-name-span', true)
+                .classed('blueish', true)
+                .style('font-weight', 'bold')
+                .style('float', 'none')
+                .text(function(d,i) {return d.lastName;});
+              
+              renderDiv
+                .append('span')
+                  .classed('first-name-span', true)
+                  .style('float', 'none')
+                  .text(function(d,i) {return ', ' + d.firstName});
+              
+              renderDiv
+                .append('br');
+              
+              selector.exit().remove();}
+            
+            function alterAndUpdateAttendees() {
+              speakers.splice(0,5); 
+              speakers.push({firstName:'Someone', lastName:'New'});
+              updateAttendees();
+            }
+              
+            </script>
+            <pre class="pre-scrollable">
+var speakers = [
+  {firstName: 'Mite',
+    lastName: 'Mitreski'},
+  {firstName: 'Branislav',
+    lastName: 'Bajlovski'},
+  {firstName: 'Igor',
+    lastName: 'Stojanovski'},
+  {firstName: 'Pance',
+    lastName: 'Cavkovski'},
+  {firstName: 'Dragan',
+    lastName: 'Sahpaski'},
+  {firstName: 'Goran',
+    lastName: 'Peoski'},
+  {firstName: 'Nikolche',
+    lastName: 'Mihajlovski'},
+  {firstName: 'Ice',
+    lastName: 'Penov'},
+  {firstName: 'Risto',
+    lastName: 'Muchev'}];
+
+
+function updateAttendees() {
+  
+  var theEmptyDiv = 
+   d3.select('#slide5 .emptyDiv');
+
+  //Select and bint the data
+  var selector = 
+    theEmptyDiv.selectAll('.speakerData')
+    .data(speakers);
+  
+  //Define what happens on update
+  selector
+    .select('.first-name-span')
+    .text(function(d,i) {return ', ' + d.firstName;});
+  
+  selector
+     .select('.last-name-span')
+     .text(function(d,i) {return d.lastName;});
+  
+  //Define what happens on creation
+  var renderDiv = 
+    selector.enter().append('div');
+  
+  renderDiv
+    .classed('speakerData', true)
+    .classed('normal24', true)
+  
+  renderDiv
+    .append('i')
+      .classed('icon-user', true)
+      .classed('icon-white', true)
+      .style('vertical-align','middle');
+  
+  renderDiv
+    .append('span')
+      .classed('last-name-span', true)
+      .classed('blueish', true)
+      .style('font-weight', 'bold')
+      .style('float', 'none')
+      .text(function(d,i) {return d.lastName;});
+  
+  renderDiv
+    .append('span')
+      .classed('first-name-span', true)
+      .style('float', 'none')
+      .text(function(d,i) {return ', ' + d.firstName});
+  
+  renderDiv
+    .append('br');
+  
+  //Define what happens on removal
+  selector.exit().remove();
+  
+}
+
+
+function alterAndUpdateAttendees() {
+  speakers.splice(0,5); 
+  speakers.push({firstName:'Someone', lastName:'New'});
+  updateAttendees();
+}
+            </pre>
+            
+            <div style="width:100%; text-align:right;">
+            <a class="btn btn-primary" onclick="updateAttendees();">Execute</a>
+            <a class="btn btn-info" onclick="alterAndUpdateAttendees();">Alter</a>
+              </div></div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
+      </div>
+      
+      <div id="slide6" class="item">
+        <h1 class="bold72">Bunch of utuls</h1>
+        <div style="width:100%; height:80px;"></div>
+        <p class="normal42">Integrated processing and layouting utilities</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - data fetching: d3.[json | xml | html | csv | text]<br/></p>
+        
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - arrays and string tools</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - math, time, colors... </p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32"> - transition, behaviors, shapes, ...</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal32 blueish"> - layouts: tree, pie, stack, histogram, graph ...</p>
+      </div> 
+      
+      <div id="slide7" class="item">
+        <h1 class="bold72">What's all the fuzz about?</h1>
+        
+        <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:60%;display:inline-block;float:left" class="emptyDiv">
+            &nbsp;
+          </div>
+          <div style="width:40%;display:inline-block;float:left;" class="codeDiv">
+          <script type="text/javascript">
+            var attendeesStats = [
+                            {d: 8, v: 34},
+                            {d: 9, v: 44},
+                            {d: 10, v: 2},
+                            {d: 11, v: 14},
+                            {d: 12, v: 18},
+                            {d: 13, v: 6},
+                            {d: 14, v: 2},
+                            {d: 15, v: 7},
+                            {d: 16, v: 4},
+                            {d: 17, v: 2},
+                            {d: 18, v: 13},
+                            {d: 19, v: 5},
+                            {d: 20, v: 16},
+                            {d: 21, v: 21},
+                            {d: 22, v: 17}
+                            ];
+            
+            function drawStats() {
+              
+              var theEmptyDiv = 
+               d3.select('#slide7 .emptyDiv');
+
+              var selector = 
+                theEmptyDiv.selectAll('.statsData')
+                .data(attendeesStats);
+              
+              var renderDiv = 
+                selector.enter().append('div');
+              
+              renderDiv
+                .classed('statsData', true)
+                .classed('normal24', true)
+              
+              renderDiv
+                .append('i')
+                  .classed('icon-calendar', true)
+                  .classed('icon-white', true)
+                  .style('vertical-align','middle');
+              
+              renderDiv
+              .append('span')
+                .style('float', 'none')
+                .classed('barDesc', true)
+                .text(function(d,i) {return 'Feb ' + d.d});
+              
+              renderDiv
+              .append('span')
+                .classed('bar', true)
+                .style('float', 'none')
+                .html('&nbsp;')
+                .style('width', function(d,i) {return d.v * 8;})
+                .style('background-color', function(d,i)
+                    { 
+                       return "#0055" + (55 + d.v);
+                    });
+              
+              renderDiv
+                .append('span')
+                  .style('float', 'none')
+                  .text(function(d,i) {return d.v});
+              
+              renderDiv
+                .append('br');
+            }
+              
+            </script>
+            <pre class="pre-scrollable">
+var attendeesStats = [
+  {d: 8, v: 34},
+  {d: 9, v: 44},
+  {d: 10, v: 2},
+  {d: 11, v: 14},
+  {d: 12, v: 18},
+  {d: 13, v: 6},
+  {d: 14, v: 2},
+  {d: 15, v: 7},
+  {d: 16, v: 4},
+  {d: 17, v: 2},
+  {d: 18, v: 13},
+  {d: 19, v: 5},
+  {d: 20, v: 16},
+  {d: 21, v: 21},
+  {d: 22, v: 17}
+  ];
+            
+function drawStats() {
+  
+  var theEmptyDiv = 
+   d3.select('#slide7 .emptyDiv');
+
+  var selector = 
+    theEmptyDiv.selectAll('.statsData')
+    .data(attendeesStats);
+  
+  var renderDiv = 
+    selector.enter().append('div');
+  
+  renderDiv
+    .classed('statsData', true)
+    .classed('normal24', true)
+  
+  renderDiv
+    .append('i')
+      .classed('icon-calendar', true)
+      .classed('icon-white', true)
+      .style('vertical-align','middle');
+  
+  renderDiv
+  .append('span')
+    .style('float', 'none')
+    .classed('barDesc', true)
+    .text(function(d,i) {return 'Feb ' + d.d});
+  
+  renderDiv
+  .append('span')
+    .classed('bar', true)
+    .style('float', 'none')
+    .html('&amp;nbsp;')
+    .style('width', 
+      function(d,i) {return d.v * 8;})
+    .style('background-color', 
+      function(d,i){ 
+        return "#0055" + (55 + d.v);
+      });
+  
+  renderDiv
+    .append('span')
+      .style('float', 'none')
+      .text(function(d,i) {return d.v});
+  
+  renderDiv
+    .append('br');
+}
+            </pre>
+            
+            <div style="width:100%; text-align:right;">
+            <a class="btn btn-primary" onclick="drawStats();">Execute</a>
+              </div>
+             </div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
+      </div>
+      
+      <div id="slide8" class="item">
+        <h1 class="bold72">Enough with the games</h1>
+        
+        <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:60%;display:inline-block;float:left" class="emptyDiv">
+            &nbsp;
+          </div>
+          <div style="width:40%;display:inline-block;float:left;" class="codeDiv">
+          <script type="text/javascript">
+            var attendeesStats = [
+                            {d: 8, v: 34},
+                            {d: 9, v: 44},
+                            {d: 10, v: 2},
+                            {d: 11, v: 14},
+                            {d: 12, v: 18},
+                            {d: 13, v: 6},
+                            {d: 14, v: 2},
+                            {d: 15, v: 7},
+                            {d: 16, v: 4},
+                            {d: 17, v: 2},
+                            {d: 18, v: 13},
+                            {d: 19, v: 5},
+                            {d: 20, v: 16},
+                            {d: 21, v: 21},
+                            {d: 22, v: 17}
+                            ];
+            var slide8Sorted = false;
+            var slide8x;
+            var slide8svg;
+            var slide8xAxis
+            
+            function drawSlide8() {
+              
+              //Define width/height/margins
+              var margin = {top: 10, right: 10, bottom: 20, left: 20},
+                  width = 550 - margin.left - margin.right,
+                  height = 420 - margin.top - margin.bottom;
+
+              //Define the scales (x,y)    
+              var x = d3.scale.ordinal()
+                  .rangeRoundBands([0, width], .1, 1);
+              slide8x = x;
+              var y = d3.scale.linear()
+                  .range([height, 0]);
+    
+              //Define axes drawers
+              var xAxis = d3.svg.axis()
+                  .scale(x)
+                  .orient("bottom");
+              slide8xAxis = xAxis;
+              var yAxis = d3.svg.axis()
+                  .scale(y)
+                  .orient("left");
+    
+              //Create the main svg group element
+              var svg = d3.select("#slide8 .emptyDiv").append("svg")
+                  .attr("width", width + margin.left + margin.right)
+                  .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+              slide8svg = svg;
+        
+              //Paste the data as the domain for the scales
+              x.domain(attendeesStats.map(function(d) { return d.d; }));
+              y.domain([0, d3.max(attendeesStats, function(d) { return d.v; })]);
+  
+              //Apply the axis
+              svg.append("g")
+                  .attr("class", "x axis")
+                  .attr("transform", "translate(0," + height + ")")
+                  .call(xAxis);
+              svg.append("g")
+                  .attr("class", "y axis")
+                  .call(yAxis)
+                .append("text")
+                  .attr("transform", "rotate(-90)")
+                  .attr("y", 6)
+                  .attr("dy", ".71em")
+                  .style("text-anchor", "end")
+                  .text("Registrants");
+  
+              //Draw the bars
+              svg.selectAll(".bar")
+                  .data(attendeesStats)
+                .enter().append("rect")
+                  .attr("class", "bar")
+                  .attr("x", function(d) { return x(d.d); })
+                  .attr("width", x.rangeBand())
+                  .attr("y", function(d) { return y(d.v); })
+                  .attr("height", function(d) { return height - y(d.v); });
+              
+            }
+            
+            function changeSlide8Sort() {
+              
+              // Sort and copy the array
+              var x0 = slide8x.domain(attendeesStats.sort(slide8Sorted
+                  ? function(a, b) { return b.v - a.v; }
+                  : function(a, b) { return d3.ascending(a.d, b.d); })
+                  .map(function(d) { return d.d; }))
+                  .copy();
+
+              //Define the transitions
+              var transition = slide8svg.transition().duration(750),
+                  delay = function(d, i) { return i * 50; };
+
+              //Move the bars
+              transition.selectAll(".bar")
+                  .delay(delay)
+                  .attr("x", function(d) { return x0(d.d); });
+              
+              //Move the labels
+              transition.select(".x.axis")
+                  .call(slide8xAxis)
+                .selectAll("g")
+                  .delay(delay);
+            }
+              
+            </script>
+            <pre class="pre-scrollable">
+var slide8Sorted = false;
+var slide8x;
+var slide8svg;
+var slide8xAxis
+
+function drawSlide8() {
+  
+  //Define width/height/margins
+  var margin = {top: 10, right: 10, bottom: 20, left: 20},
+      width = 550 - margin.left - margin.right,
+      height = 420 - margin.top - margin.bottom;
+
+  //Define the scales (x,y)    
+  var x = d3.scale.ordinal()
+      .rangeRoundBands([0, width], .1, 1);
+  slide8x = x;
+  var y = d3.scale.linear()
+      .range([height, 0]);
+
+  //Define axes drawers
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom");
+  slide8xAxis = xAxis;
+  var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left");
+
+  //Create the main svg group element
+  var svg = d3.select("#slide8 .emptyDiv").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  slide8svg = svg;
+
+  //Paste the data as the domain for the scales
+  x.domain(attendeesStats.map(function(d) { return d.d; }));
+  y.domain([0, d3.max(attendeesStats, function(d) { return d.v; })]);
+
+  //Apply the axis
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Registrants");
+
+  //Draw the bars
+  svg.selectAll(".bar")
+      .data(attendeesStats)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.d); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.v); })
+      .attr("height", function(d) { return height - y(d.v); });
+  
+}
+
+function changeSlide8Sort() {
+  
+  // Sort and copy the array
+  var x0 = slide8x.domain(attendeesStats.sort(slide8Sorted
+      ? function(a, b) { return b.v - a.v; }
+      : function(a, b) { return d3.ascending(a.d, b.d); })
+      .map(function(d) { return d.d; }))
+      .copy();
+
+  //Define the transitions
+  var transition = slide8svg.transition().duration(750),
+      delay = function(d, i) { return i * 50; };
+
+  //Move the bars
+  transition.selectAll(".bar")
+      .delay(delay)
+      .attr("x", function(d) { return x0(d.d); });
+  
+  //Move the labels
+  transition.select(".x.axis")
+      .call(slide8xAxis)
+    .selectAll("g")
+      .delay(delay);
+}
+            </pre>
+            
+            <div style="width:100%; text-align:right;">
+            <a class="btn btn-primary" onclick="drawSlide8();">Execute</a>
+            <a id="slide8SortBtn" class="btn" onclick="slide8Sorted = !slide8Sorted; d3.select('#slide8SortBtn').classed('btn-success', slide8Sorted);changeSlide8Sort()">Sort</a>
+              </div>
+             </div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
+      </div>
+      
+      <div id="slide9" class="item">
+        <h1 class="bold72">Interact!</h1>
+        
+        <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:60%;display:inline-block;float:left" class="emptyDiv">
+            &nbsp;
+          </div>
+          <div style="width:40%;display:inline-block;float:left;" class="codeDiv">
+          <script type="text/javascript">
+          
+          var slide9tree;
+          var slide9diagonal;
+          var slide9vis;
+          var slide9root;
+          
+          function slide9Start() {
+            //Define width, height, margins
+            var m = [20, 120, 20, 60],
+                w = 520 - m[1] - m[3],
+                h = 520 - m[0] - m[2],
+                i = 0,
+                root;
+  
+            //Define tree layour
+            var tree = d3.layout.tree()
+                .size([h, w]);
+            slide9tree = tree;
+      
+            //Define bezier curve drawer
+            var diagonal = d3.svg.diagonal()
+                .projection(function(d) { return [d.y, d.x]; });
+            slide9diagonal = diagonal;
+            
+            //Init the svg element and main group
+            var vis = d3.select("#slide9 .emptyDiv").append("svg:svg")
+                .attr("width", w + m[1] + m[3])
+                .attr("height", h + m[0] + m[2])
+              .append("svg:g")
+                .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+            slide9vis = vis;
+            
+            //Load and init process the data
+            root = flare;
+            root.x0 = h / 2;
+            root.y0 = 0;
+            slide9root = root
+    
+            function toggleAll(d) {
+              if (d.children) {
+                d.children.forEach(toggleAll);
+                toggle(d);
+              }
+            }
+    
+            // Initialize the display to show a few nodes.
+            root.children.forEach(toggleAll);
+            toggle(root.children[1]);
+            toggle(root.children[1].children[2]);
+            toggle(root.children[9]);
+            toggle(root.children[9].children[0]);
+    
+            //Update & start the tree
+            updateSlide9(root);
+          }
+    
+          function updateSlide9(source) {
+            var duration =  500;
+    
+            // Compute the new tree layout.
+            var nodes = slide9tree.nodes(slide9root).reverse();
+    
+            // Normalize for fixed-depth.
+            nodes.forEach(function(d) { d.y = d.depth * 120; });
+    
+            // Add the data to the nodes
+            var i = 0;
+            var node = slide9vis.selectAll("g.node")
+                .data(nodes, function(d) { return d.id || (d.id = ++i); });
+    
+            // Enter any new nodes at the parent's previous position.
+            var nodeEnter = node.enter().append("svg:g")
+                .attr("class", "node")
+                .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+                .on("click", function(d) { toggle(d); updateSlide9(d); });
+    
+            nodeEnter.append("svg:circle")
+                .attr("r", 1e-6)
+                .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+    
+            nodeEnter.append("svg:text")
+                .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+                .attr("dy", ".35em")
+                .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+                .text(function(d) { return d.name; })
+                .style("fill-opacity", 1e-6);
+    
+            // Transition nodes to their new position.
+            var nodeUpdate = node.transition()
+                .duration(duration)
+                .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+    
+            nodeUpdate.select("circle")
+                .attr("r", 4.5)
+                .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+    
+            nodeUpdate.select("text")
+                .style("fill-opacity", 1);
+    
+            // Transition exiting nodes to the parent's new position.
+            var nodeExit = node.exit().transition()
+                .duration(duration)
+                .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+                .remove();
+    
+            nodeExit.select("circle")
+                .attr("r", 1e-6);
+    
+            nodeExit.select("text")
+                .style("fill-opacity", 1e-6);
+    
+            // Update the links
+            var link = slide9vis.selectAll("path.link")
+                .data(slide9tree.links(nodes), function(d) { return d.target.id; });
+    
+            // Enter any new links at the parent's previous position.
+            link.enter().insert("svg:path", "g")
+                .attr("class", "link")
+                .attr("d", function(d) {
+                  var o = {x: source.x0, y: source.y0};
+                  return slide9diagonal({source: o, target: o});
+                })
+              .transition()
+                .duration(duration)
+                .attr("d", slide9diagonal);
+    
+            // Transition links to their new position.
+            link.transition()
+                .duration(duration)
+                .attr("d", slide9diagonal);
+    
+            // Transition exiting nodes to the parent's new position.
+            link.exit().transition()
+                .duration(duration)
+                .attr("d", function(d) {
+                  var o = {x: source.x, y: source.y};
+                  return slide9diagonal({source: o, target: o});
+                })
+                .remove();
+    
+            // Keep the old positions for transition.
+            nodes.forEach(function(d) {
+              d.x0 = d.x;
+              d.y0 = d.y;
+            });
+          }
+    
+          // Toggle children.
+          function toggle(d) {
+            if (d.children) {
+              d._children = d.children;
+              d.children = null;
+            } else {
+              d.children = d._children;
+              d._children = null;
+            }
+          }
+              
+            </script>
+            <pre class="pre-scrollable">
+var slide9tree;
+var slide9diagonal;
+var slide9vis;
+var slide9root;
+
+function slide9Start() {
+  //Define width, height, margins
+  var m = [20, 120, 20, 60],
+      w = 520 - m[1] - m[3],
+      h = 520 - m[0] - m[2],
+      i = 0,
+      root;
+
+  //Define tree layour
+  var tree = d3.layout.tree()
+      .size([h, w]);
+  slide9tree = tree;
+
+  //Define bezier curve drawer
+  var diagonal = d3.svg.diagonal()
+      .projection(function(d) { return [d.y, d.x]; });
+  slide9diagonal = diagonal;
+  
+  //Init the svg element and main group
+  var vis = d3.select("#slide9 .emptyDiv").append("svg:svg")
+      .attr("width", w + m[1] + m[3])
+      .attr("height", h + m[0] + m[2])
+    .append("svg:g")
+      .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+  slide9vis = vis;
+  
+  //Load and init process the data
+  root = flare;
+  root.x0 = h / 2;
+  root.y0 = 0;
+  slide9root = root
+
+  function toggleAll(d) {
+    if (d.children) {
+      d.children.forEach(toggleAll);
+      toggle(d);
+    }
+  }
+
+  // Initialize the display to show a few nodes.
+  root.children.forEach(toggleAll);
+  toggle(root.children[1]);
+  toggle(root.children[1].children[2]);
+  toggle(root.children[9]);
+  toggle(root.children[9].children[0]);
+
+  //Update & start the tree
+  updateSlide9(root);
+}
+
+function updateSlide9(source) {
+  var duration =  500;
+
+  // Compute the new tree layout.
+  var nodes = slide9tree.nodes(slide9root).reverse();
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 120; });
+
+  // Add the data to the nodes
+  var i = 0;
+  var node = slide9vis.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("svg:g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", function(d) { toggle(d); updateSlide9(d); });
+
+  nodeEnter.append("svg:circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("svg:text")
+      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 4.5)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links
+  var link = slide9vis.selectAll("path.link")
+      .data(slide9tree.links(nodes), function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("svg:path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return slide9diagonal({source: o, target: o});
+      })
+    .transition()
+      .duration(duration)
+      .attr("d", slide9diagonal);
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", slide9diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return slide9diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Keep the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+// Toggle children.
+function toggle(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+}
+            </pre>
+            
+            <div style="width:100%; text-align:right;">
+            <a class="btn btn-primary" onclick="slide9Start();">Execute</a>
+              </div>
+             </div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
+      </div>
+      
+      <div id="slide10" class="item">
+        <h1 class="bold72">Physics in action</h1>
+        
+        <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:60%;display:inline-block;float:left" class="emptyDiv">
+            &nbsp;
+          </div>
+          <div style="width:40%;display:inline-block;float:left;" class="codeDiv">
+          <script type="text/javascript">
+          
+          function startSlide10() {
+            //Define width/height
+            var width = 520,
+              height = 520;
+
+            //color setting util
+            var color = d3.scale.category20();
+      
+            //Define the force layout and physics
+            var force = d3.layout.force()
+                .charge(-120)
+                .linkDistance(30)
+                .size([width, height]);
+      
+            //Create the main svg
+            var svg = d3.select("#slide10 .emptyDiv").append("svg")
+                .attr("width", width)
+                .attr("height", height);
+      
+            var graph = miserables;
+            
+            //apply the data to the force layout and start
+            force
+                .nodes(graph.nodes)
+                .links(graph.links)
+                .start();
+    
+            //Draw the links
+            var link = svg.selectAll(".link")
+                .data(graph.links)
+              .enter().append("line")
+                .attr("class", "link")
+                .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+    
+            //Draw the nodes
+            var node = svg.selectAll(".node")
+                .data(graph.nodes)
+              .enter().append("circle")
+                .attr("class", "node")
+                .attr("r", 5)
+                .style("fill", function(d) { return color(d.group); })
+                .call(force.drag);
+            node.append("title")
+                .text(function(d) { return d.name; });
+    
+            //Bind the 'tick' event
+            force.on("tick", function() {
+              link.attr("x1", function(d) { return d.source.x; })
+                  .attr("y1", function(d) { return d.source.y; })
+                  .attr("x2", function(d) { return d.target.x; })
+                  .attr("y2", function(d) { return d.target.y; });
+    
+              node.attr("cx", function(d) { return d.x; })
+                  .attr("cy", function(d) { return d.y; });
+            });
+          }
+              
+            </script>
+            <pre class="pre-scrollable">
+function startSlide10() {
+  //Define width/height
+  var width = 520,
+    height = 520;
+
+  //color setting util
+  var color = d3.scale.category20();
+
+  //Define the force layout and physics
+  var force = d3.layout.force()
+      .charge(-120)
+      .linkDistance(30)
+      .size([width, height]);
+
+  //Create the main svg
+  var svg = d3.select("#slide10 .emptyDiv").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+  var graph = miserables;
+  
+  //apply the data to the force layout and start
+  force
+      .nodes(graph.nodes)
+      .links(graph.links)
+      .start();
+
+  //Draw the links
+  var link = svg.selectAll(".link")
+      .data(graph.links)
+    .enter().append("line")
+      .attr("class", "link")
+      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+  //Draw the nodes
+  var node = svg.selectAll(".node")
+      .data(graph.nodes)
+    .enter().append("circle")
+      .attr("class", "node")
+      .attr("r", 5)
+      .style("fill", function(d) { return color(d.group); })
+      .call(force.drag);
+  node.append("title")
+      .text(function(d) { return d.name; });
+
+  //Bind the 'tick' event
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+}
+            </pre>
+            
+            <div style="width:100%; text-align:right;">
+            <a class="btn btn-primary" onclick="startSlide10();">Execute</a>
+              </div>
+             </div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
+      </div>
+      
+      <div id="slide11" class="item">
+        <h1 class="bold72">Make it complicated</h1>
+        
+        <div style="width:100%; height:30px;"></div>
+        
+          <div style="width:60%;display:inline-block;float:left" class="emptyDiv">
+            &nbsp;
+          </div>
+          <div style="width:40%;display:inline-block;float:left;" class="codeDiv">
+          <script type="text/javascript">
+          function startSlide11() {
+            //Define widht/height, color util
+            var w = 520,
+                h = 520,
+                links = [],
+                voronoiVertices = [],
+                color = d3.scale.quantize().domain([7000, 10000]).range(d3.range(2, 9));
+      
+            var numVertices = 50;
+            var vertices = d3.range(numVertices).map(function(d) { return {x: d.x, y: d.y}; })
+            
+            //define mouse-roll behaviour to add/remove vertices
+            var prevEventScale = 1;
+            var zoom = d3.behavior.zoom().on("zoom", function(d,i) {
+                if (d3.event.scale > prevEventScale) {
+                    vertices.push(function(d) { return {x: d.x, y: d.y}; })
+                } else if (vertices.length > 2) {
+                    vertices.pop();
+                }
+                //restart the forcegraph
+                force.nodes(vertices).start()
+                prevEventScale = d3.event.scale;
+            });
+      
+            //Draw the main svg element
+            var svg = d3.select("#slide11 .emptyDiv")
+                    .append("svg")
+                    .attr("width", w)
+                    .attr("height", h)
+                    .attr("class", "Purples")
+                    .call(zoom)
+      
+            //Defeine the force-graph physics
+            var force = self.force = d3.layout.force()
+                    .charge(-300)
+                    .size([w, h])
+                    .on("tick", update);
+      
+            //Start the force-graph
+            force.nodes(vertices).start();
+      
+            var circle = svg.selectAll("circle");
+            var path = svg.selectAll("path");
+            var link = svg.selectAll("line");
+      
+            function update(e) {
+                voronoiVertices = vertices.map(function(o){return [o.x,  o.y, o]})
+      
+                //Init the voronoi layout, and draw the paths
+                path = path.data(d3.geom.voronoi(voronoiVertices))
+                path.enter().insert("path", "path") //group all the path elements first so they have the lowest z-order
+                    .attr("class", function(d, i) { return "q"+color(d3.geom.polygon(d).area())+"-9"; })
+                    .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+                
+                //update
+                path.attr("class", function(d, i) { return "q"+color(d3.geom.polygon(d).area())+"-9"; })
+                    .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+                
+                //remove
+                path.exit().remove();
+      
+                //Draw the circles
+                circle = circle.data(vertices)
+                circle.enter().append("circle")
+                      .call(force.drag)
+                      .attr("r", 0)
+                      .attr("cx", function(d) { return d.x; })
+                      .attr("cy", function(d) { return d.y; })
+                      .transition().duration(1000).attr("r", 5);
+                
+                //update
+                circle.attr("cx", function(d) { return d.x; })
+                      .attr("cy", function(d) { return d.y; });
+                
+                //delete
+                circle.exit().transition().attr("r", 0).remove();
+      
+                //compute the links (delaunay triangles)
+                links = []
+                d3.geom.delaunay(voronoiVertices).forEach(function(d) {
+                    links.push(edge(d[0], d[1]));
+                    links.push(edge(d[1], d[2]));
+                    links.push(edge(d[2], d[0]));
+                });
+      
+                //draw the links
+                link = link.data(links)
+                link.enter().append("line")
+                
+                //update
+                link.attr("x1", function(d) { return d.source[2].x; })
+                    .attr("y1", function(d) { return d.source[2].y; })
+                    .attr("x2", function(d) { return d.target[2].x; })
+                    .attr("y2", function(d) { return d.target[2].y; })
+      
+                //delete
+                link.exit().remove()
+            }
+      
+            function edge(a, b) {
+                return {
+                    source: a,
+                    target: b
+                };
+            }
+          }
+                    
+            </script>
+            <pre class="pre-scrollable">
+function startSlide11() {
+  //Define widht/height, color util
+  var w = 520,
+      h = 520,
+      links = [],
+      voronoiVertices = [],
+      color = d3.scale.quantize().domain([7000, 10000]).range(d3.range(2, 9));
+
+  var numVertices = 50;
+  var vertices = d3.range(numVertices).map(function(d) { return {x: d.x, y: d.y}; })
+  
+  //define mouse-roll behaviour to add/remove vertices
+  var prevEventScale = 1;
+  var zoom = d3.behavior.zoom().on("zoom", function(d,i) {
+      if (d3.event.scale > prevEventScale) {
+          vertices.push(function(d) { return {x: d.x, y: d.y}; })
+      } else if (vertices.length > 2) {
+          vertices.pop();
+      }
+      //restart the forcegraph
+      force.nodes(vertices).start()
+      prevEventScale = d3.event.scale;
+  });
+
+  //Draw the main svg element
+  var svg = d3.select("#slide11 .emptyDiv")
+          .append("svg")
+          .attr("width", w)
+          .attr("height", h)
+          .attr("class", "Purples")
+          .call(zoom)
+
+  //Defeine the force-graph physics
+  var force = self.force = d3.layout.force()
+          .charge(-300)
+          .size([w, h])
+          .on("tick", update);
+
+  //Start the force-graph
+  force.nodes(vertices).start();
+
+  var circle = svg.selectAll("circle");
+  var path = svg.selectAll("path");
+  var link = svg.selectAll("line");
+
+  function update(e) {
+      voronoiVertices = vertices.map(function(o){return [o.x,  o.y, o]})
+
+      //Init the voronoi layout, and draw the paths
+      path = path.data(d3.geom.voronoi(voronoiVertices))
+      path.enter().insert("path", "path") //group all the path elements first so they have the lowest z-order
+          .attr("class", function(d, i) { return "q"+color(d3.geom.polygon(d).area())+"-9"; })
+          .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+      
+      //update
+      path.attr("class", function(d, i) { return "q"+color(d3.geom.polygon(d).area())+"-9"; })
+          .attr("d", function(d) { return "M" + d.join("L") + "Z"; });
+      
+      //remove
+      path.exit().remove();
+
+      //Draw the circles
+      circle = circle.data(vertices)
+      circle.enter().append("circle")
+            .call(force.drag)
+            .attr("r", 0)
+            .attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; })
+            .transition().duration(1000).attr("r", 5);
+      
+      //update
+      circle.attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; });
+      
+      //delete
+      circle.exit().transition().attr("r", 0).remove();
+
+      //compute the links (delaunay triangles)
+      links = []
+      d3.geom.delaunay(voronoiVertices).forEach(function(d) {
+          links.push(edge(d[0], d[1]));
+          links.push(edge(d[1], d[2]));
+          links.push(edge(d[2], d[0]));
+      });
+
+      //draw the links
+      link = link.data(links)
+      link.enter().append("line")
+      
+      //update
+      link.attr("x1", function(d) { return d.source[2].x; })
+          .attr("y1", function(d) { return d.source[2].y; })
+          .attr("x2", function(d) { return d.target[2].x; })
+          .attr("y2", function(d) { return d.target[2].y; })
+
+      //delete
+      link.exit().remove()
+  }
+
+  function edge(a, b) {
+      return {
+          source: a,
+          target: b
+      };
+  }
+}
+            </pre>
+            
+            <div style="width:100%; text-align:right;">
+            <a class="btn btn-primary" onclick="startSlide11();">Execute</a>
+              </div>
+             </div>
+        
+          <div class="clearfix"></div>
+          <div style="width:100%; height:30px;"></div>
+      </div>
+      
+      <div id="slide12" class="item">
+        <h1 class="bold72">Links</h1>
+        <div style="width:100%; height:80px;"></div>
+        <p class="normal35"><a href="http://d3js.org/">d3js.org</a> Description, Docs, API</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal35"><a href="https://github.com/mbostock/d3/wiki/Gallery">github.com/mbostock/d3/wiki/Gallery</a> &gt; 300 examples</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal35"><a href="https://github.com/d3/d3-plugins">github.com/d3/d3-plugins</a> Plugins</p>
+        <div style="width:100%; height:30px;"></div>
+        <p class="normal35"><a href="https://github.com/hsilomedus/javadayd3">github.com/hsilomedus/javadayd3</a> This presentation</p>
+        
+      </div> 
       
     </div>
     
